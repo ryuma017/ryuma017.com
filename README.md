@@ -1,4 +1,6 @@
-# A personal portfolio powered by WASM
+# My personal portfolio site
+WASM-powered and Rust-only
+
 
 ## front-end
 - framework: [Yew](https://github.com/yewstack/yew)
