@@ -1,8 +1,8 @@
 use yew::prelude::*;
 
-pub struct Contact;
+pub struct PageNotFound;
 
-impl Component for Contact {
+impl Component for PageNotFound {
     type Message = ();
     type Properties = ();
 
@@ -12,7 +12,7 @@ impl Component for Contact {
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
-            <h1>{"Contact"}</h1>
+            <h1>{"Page Not Found 404"}</h1>
         }
     }
 }
