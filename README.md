@@ -1,6 +1,5 @@
 # My personal portfolio site
-WASM-powered and Rust-only
-
+The whole of this site is powered by WebAssembly compiled from Rust.
 
 ## front-end
 - framework: [Yew](https://github.com/yewstack/yew)
