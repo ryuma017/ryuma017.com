@@ -12,7 +12,7 @@ impl Component for Works {
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
-            <h1>{"Works"}</h1>
+            <h1>{"No content"}</h1>
         }
     }
 }

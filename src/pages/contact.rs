@@ -12,7 +12,15 @@ impl Component for Contact {
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
-            <h1>{"Contact"}</h1>
+            <>
+                <h1 class="section-title">{"Get In Touch"}</h1>
+                <p>
+                    {"ご覧いただきありがとうございました。"}<br/>
+                    {"このサイトを通して、私のことを少しでも知っていただけたのなら嬉しいです。"}<br/>
+                    {"もし、このサイトや私について何かコメントがありましたら、下のボタンをご利用ください。"}
+                </p>
+                <a class="btn" href="mailto:ryuma.taguchi@gmail.com">{"send email"}</a>
+            </>
         }
     }
 }

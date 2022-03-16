@@ -12,7 +12,10 @@ impl Component for Home {
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
-            <h1>{"Home"}</h1>
+            <>
+                <p>{"Welcome to ryuma017's parsonal portfolio site."}</p>
+                <p>{"This site is powered by WASM compiled by Rust, which I am currently studying"}</p>
+            </>
         }
     }
 }
