@@ -51,7 +51,6 @@ impl Component for App {
 
 impl App {
     fn view_nav(&self, _link: &Scope<Self>) -> Html {
-
         html! {
             <header>
                 // <img class="logo" src="public/images/R_icon.svg" alt="logo" />
