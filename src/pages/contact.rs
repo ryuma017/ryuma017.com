@@ -19,7 +19,7 @@ impl Component for Contact {
                     {"このサイトを通して、私のことを少しでも知っていただけたのなら嬉しいです。"}<br/>
                     {"もし、このサイトや私について何かコメントがありましたら、下のボタンをご利用ください。"}
                 </p>
-                <a class="btn" href="mailto:ryuma.taguchi@gmail.com">{"send email"}</a>
+                <a class="btn" href="mailto:tgcrym01@gmail.com">{"send email"}</a>
             </>
         }
     }
