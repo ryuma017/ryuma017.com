@@ -14,7 +14,7 @@ impl Component for Home {
         html! {
             <>
                 <p>{"Welcome to ryuma017's parsonal portfolio site."}</p>
-                <p>{"This site is powered by WASM compiled by Rust, which I am currently studying"}</p>
+                <p>{"This site is powered by WASM compiled from Rust, which I am currently studying"}</p>
             </>
         }
     }

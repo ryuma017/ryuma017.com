@@ -4,90 +4,88 @@ $sub-color: #8892B0;
 $accent-color: #558BC8;
 $background-color: #112240;
 
-// font sizes
-
 
 body {
-	display: flex;
-  	flex-flow: column;
-	min-height: 100vh;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	background-color: #0A192F;
-	color: $main-color;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #0A192F;
+  color: $main-color;
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		padding: 20px 3%;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 3%;
 
-		.logo {
-			cursor: pointer;
-			color: $accent-color;
-			font-size: 30px;
-		}
+    .logo {
+      cursor: pointer;
+      color: $accent-color;
+      font-size: 30px;
+    }
 
-		nav {
+    nav {
 
-			.nav__links {
-				list-style: none;
+      .nav__links {
+        list-style: none;
 
-				li {
-					display: inline-block;
-					padding: 0 20px;
+        li {
+          display: inline-block;
+          padding: 0 20px;
 
-					a {
-						color: $sub-color;
-						transition: all 0.3s ease 0s;
-						text-decoration: none;
-					}
+          a {
+            color: $sub-color;
+            transition: all 0.3s ease 0s;
+            text-decoration: none;
+          }
 
-					a:hover {
-						color: $accent-color;
-					}
+          a:hover {
+            color: $accent-color;
+          }
 
-					a:focus {
-						color: $accent-color;
-					}
-				}
-			}
-		}
-	} // end header
+          a:focus {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  } // end header
 
-	main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		flex: 1;
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 
-		.btn {
-			color: $accent-color;
-			background-color: transparent;
-			text-decoration: none;
-			padding: 15px 20px;
-			margin: 50px 0;
-			border: 2px solid $accent-color;
-			border-radius: 5px;
-			transition: all 0.3s ease 0s;
-		}
+    .btn {
+      color: $accent-color;
+      background-color: transparent;
+      text-decoration: none;
+      padding: 15px 20px;
+      margin: 50px 0;
+      border: 2px solid $accent-color;
+      border-radius: 5px;
+      transition: all 0.3s ease 0s;
+    }
 
-		.btn:hover {
-			background-color: rgba($accent-color, 0.3);
-		}
-	} // end main
+    .btn:hover {
+      background-color: rgba($accent-color, 0.3);
+    }
+  } // end main
 
-	footer {
-		display: flex;
-		justify-content: center;
-		padding: 20px 0;
-		div {
-			a {
-				text-decoration: none;
-				color: $main-color;
-			}
-		}
-	} // end footer
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    div {
+      a {
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
+  } // end footer
 }

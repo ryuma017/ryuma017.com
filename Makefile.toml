@@ -4,8 +4,7 @@ PORT = "8000"
 [config]
 skip_core_tasks = true
 
-# ---- BASIC ----
-
+# BASIC
 [tasks.serve]
 description = "Start server"
 dependencies = ["install-trunk", "install-wasm-bindgen-cli"]
@@ -16,8 +15,7 @@ args = ["serve", "--port", "${PORT}"]
 description = "Format, lint with Clippy and run tests"
 dependencies = ["fmt", "clippy"]
 
-# ---- BUILD ----
-
+# BUILD
 [tasks.build]
 description = "Build with trunk"
 dependencies = ["install-trunk", "install-wasm-bindgen-cli"]
@@ -30,16 +28,14 @@ dependencies = ["install-trunk", "install-wasm-bindgen-cli"]
 command = "trunk"
 args = ["build", "--release"]
 
-# ---- INSTALL ----
-
+# INSTALL
 [tasks.install-trunk]
 install_crate = { crate_name = "trunk", binary = "trunk", test_arg = "-V"}
 
 [tasks.install-wasm-bindgen-cli]
 install_crate = { crate_name = "wasm-bindgen-cli", binary = "wasm-bindgen", test_arg = "--help"}
 
-# ---- LINT ----
-
+# LINT
 [tasks.clippy]
 description = "Lint with Clippy"
 install_crate = { rustup_component_name = "clippy", binary = "cargo-clippy", test_arg = "--help" }
