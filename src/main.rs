@@ -3,11 +3,11 @@ use yew_router::prelude::*;
 
 mod pages;
 use pages::{
-    about::About, contact::Contact, home::Home, page_not_found::PageNotFound, works::Works,
+    about::About, contact::Contact, home::Home, not_found::PageNotFound, works::Works,
 };
 
 #[derive(Routable, PartialEq, Clone, Debug)]
-pub enum Route {
+enum Route {
     #[at("/")]
     Home,
     #[at("/about")]
@@ -16,11 +16,12 @@ pub enum Route {
     Contact,
     #[at("/works")]
     Works,
+    #[not_found]
     #[at("/404")]
     NotFound,
 }
 
-pub struct App;
+struct App;
 
 impl Component for App {
     type Message = ();
